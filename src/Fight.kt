@@ -1,19 +1,25 @@
+//Класс для логики боя
 class Fight {
+//Использование классов
     var skeleton = Skeleton()
     var hero = Hero()
     var zombie = Zombie()
     var boss = Boss()
+    //Заглушка базы данных для "корректной" работы
     var herohp = hero.hp
     var skeletonhp = skeleton.hp
     var zombiehp = zombie.hp
     var bosshp = boss.hp
+    //Продолжении заглушки
     fun clearhp(){
         herohp = hero.hp
         skeletonhp = skeleton.hp
         zombiehp = zombie.hp
         bosshp = boss.hp
     }
+    //Логика боя
     fun fight(enemy:Any){
+        //выбор моба и передача его параметров
         var attackenemy = 0.0
         var hpenemy = 0.0
         var expenemy = 0.0
