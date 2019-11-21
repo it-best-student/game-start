@@ -6,5 +6,6 @@ class Griffon {
         hp *= lvl
         attack *= lvl
         expgive *= lvl
+
     }
 }
