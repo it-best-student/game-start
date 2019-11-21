@@ -1,4 +1,4 @@
 fun main(args:Array<String>){
-var fight = Fight()
+ var fight = Fight()
     fight.fight(fight.skeleton)
 }
