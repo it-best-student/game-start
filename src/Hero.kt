@@ -14,7 +14,13 @@ class Hero {
         hp *= 2.0
         attack *= 2.0
         lvl += 1
-        println("Hero lvlup $hp  $attack $exp $lvl")
+        stats()
+        println("Congratulations! Hero lvl up! ${stats()}")
+    }
+//    Function of stats
+    fun stats():String{
+        var stats = "Your stats hp=$hp  attack=$attack exp=$exp lvl=$lvl"
+        return stats
     }
     //    Повышение уровня при достижении нужного кол-ва опыта
     fun expup(){

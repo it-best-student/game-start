@@ -13,7 +13,7 @@ class Fight {
             dataBase.skeleton -> {attackenemy=dataBase.skeleton.attack; hpenemy=dataBase.skeletonhp; expenemy=dataBase.skeleton.expgive}
             dataBase.boss -> {attackenemy=dataBase.boss.attack; hpenemy=dataBase.bosshp; expenemy=dataBase.boss.expgive}
             dataBase.fairy -> {attackenemy=dataBase.fairy.attack; hpenemy=dataBase.fairyhp; expenemy=dataBase.fairy.expgive}
-            dataBase.frozen -> {attackenemy=dataBase.frozen.attack; hpenemy=dataBase.frozenhp; expenemy=dataBase.frozen.expegive}
+            dataBase.frozen -> {attackenemy=dataBase.frozen.attack; hpenemy=dataBase.frozenhp; expenemy=dataBase.frozen.expgive}
             dataBase.griffon -> {attackenemy=dataBase.griffon.attack; hpenemy=dataBase.griffonhp; expenemy=dataBase.griffon.expgive}
             dataBase.troll -> {attackenemy=dataBase.troll.attack; hpenemy=dataBase.trollhp; expenemy=dataBase.troll.expgive}
             dataBase.vampire -> {attackenemy=dataBase.vampire.attack; hpenemy=dataBase.vampirehp; expenemy=dataBase.vampire.expgive}
@@ -26,7 +26,7 @@ class Fight {
         }while ((dataBase.herohp>0.0) && (hpenemy>0.0))
         if (hpenemy<=0.0){
             dataBase.hero.win(expenemy)
-            println("Hero win $enemy, you get $expenemy, now you have ${dataBase.hero.exp}")
+            println("Hero win $enemy, you get $expenemy exp, now you have ${dataBase.hero.exp} exp")
         }
         dataBase.clearhp()
     }
